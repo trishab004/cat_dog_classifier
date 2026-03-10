@@ -4,6 +4,8 @@ import numpy as np
 from PIL import Image
 import requests
 import os
+from flask_cors import CORS
+CORS(app)
 
 app = Flask(__name__)
 
