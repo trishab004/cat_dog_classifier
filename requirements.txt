@@ -1,6 +1,6 @@
 flask
-tensorflow
+tensorflow==2.15.0
 pillow
 numpy
-gunicorn
 requests
+gunicorn
