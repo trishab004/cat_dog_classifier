@@ -27,6 +27,13 @@ def preprocess(img):
     img = np.expand_dims(img, axis=0)
     return img
 
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({
+        "status": "online",
+        "message": "Cat/Dog Classifier API is running! Send a POST request with an image to /predict."
+    })
+
 @app.route("/predict", methods=["POST"])
 def predict():
     file = request.files["image"]
