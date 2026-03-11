@@ -5,9 +5,10 @@ from PIL import Image
 import requests
 import os
 from flask_cors import CORS
-CORS(app)
+
 
 app = Flask(__name__)
+CORS(app)
 
 MODEL_URL = "https://huggingface.co/Trish004/cat-dog-classifier/resolve/main/cat_dog_classifier.keras"
 MODEL_PATH = "model.keras"
